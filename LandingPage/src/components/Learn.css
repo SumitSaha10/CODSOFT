@@ -1,0 +1,152 @@
+.learn {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.learn-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 100%;
+    margin-left: 4rem;
+    padding: 1rem;
+}
+
+.learn-box p {
+    color: rgb(128, 126, 126);
+}
+
+.learn-box .learn-box-heading {
+    font-size: 4rem;
+    font-weight: bold;
+
+}
+
+.learn-box .learn-box-description {
+    font-size: 1.4rem;
+    color: rgb(128, 126, 126);
+
+}
+
+.learn-box .learn-box-btn {
+    padding: 1.5rem;
+    background-color: rgb(33, 33, 33);
+    color: white;
+    border-radius: 55px;
+    font-weight: bold;
+    cursor: pointer;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 30px;
+    z-index: 1;
+
+}
+
+.learn-box .learn-box-btn:hover {
+    animation: animate 8s linear infinite;
+}
+
+
+
+@keyframes animate {
+
+    0% {
+
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 400%
+    }
+}
+
+
+
+.learn-box .learn-box-btn:hover {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+
+}
+
+@media (max-width:900px) {
+    .learn .iframe {
+        display: none;
+    }
+
+    .learn-box {
+        width: 60%;
+    }
+
+    .learn-box .learn-box-heading {
+        font-size: 3rem;
+        font-weight: bold;
+
+    }
+
+    .learn-box .learn-box-description {
+        font-size: 1.2rem;
+
+
+    }
+
+    .learn-box .learn-box-btn {
+        padding: 0.8rem;
+
+    }
+}
+
+@media (max-width:600px) {
+    .learn-box {
+        width: 70%;
+    }
+
+    .learn-box .learn-box-heading {
+        font-size: 2.5rem;
+        font-weight: bold;
+
+    }
+
+    .learn-box .learn-box-description {
+        font-size: 1rem;
+
+
+    }
+
+    .learn-box .learn-box-btn {
+        padding: 0.8rem;
+
+
+    }
+}
+
+@media (max-width:400px) {
+    .learn-box {
+        width: 60%;
+    }
+
+    .learn-box .learn-box-heading {
+        font-size: 2rem;
+        font-weight: bold;
+
+    }
+
+    .learn-box .learn-box-description {
+        font-size: 0.8rem;
+
+
+    }
+
+    .learn-box .learn-box-btn {
+        padding: 0.6rem;
+
+
+    }
+}

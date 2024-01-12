@@ -1,0 +1,86 @@
+.features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+    background-color: whitesmoke;
+    font-family: 'Oswald', sans-serif;
+    padding: 2rem 0px;
+    background-color: black;
+}
+
+.features .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features .box img {
+    width: 100px;
+}
+
+.features .box i {
+    font-size: 3rem;
+
+}
+
+.sub-features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.sub-features p {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.sub-features a {
+    font-size: 1.3rem;
+    font-size: 1rem;
+    color: rgb(172, 161, 161);
+}
+
+@media (max-width:800px) {
+    .features .box i {
+        font-size: 2rem;
+
+    }
+
+    .sub-features p {
+        font-size: 1rem;
+
+    }
+
+    .sub-features a {
+        font-size: 1rem;
+
+    }
+}
+
+@media (max-width:600px) {
+
+    .sub-features p {
+        font-size: 0.8rem;
+
+    }
+
+    .sub-features a {
+        font-size: 0.8rem;
+
+    }
+}
+
+@media (max-width:400px) {
+
+    .sub-features p {
+        font-size: 0.6rem;
+
+    }
+
+    .sub-features a {
+        font-size: 0.6rem;
+
+    }
+}
