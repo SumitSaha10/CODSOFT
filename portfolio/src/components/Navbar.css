@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@300&family=REM:wght@200&family=Seymour+One&family=Yeon+Sung&family=Young+Serif&display=swap');
+
+.navbar {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 1px rgb(239, 236, 236);
+    padding: 5px;
+    font-family: "Lato", sans-serif;
+
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar .logo img {
+    width: 100px;
+    aspect-ratio: 3/1;
+}
+
+.navbar .logo i {
+    display: none;
+    font-size: 28px;
+}
+
+.navbar .menus ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navbar .menus ul li {
+    list-style: none;
+    width: 100%;
+    padding: 12px 14px;
+
+}
+
+.navbar .menus ul li:hover {
+    border-bottom: 1px solid rgb(5, 164, 249);
+}
+
+.navbar .menus ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+
+}
+
+@media(max-width:700px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar .logo {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .navbar .logo i {
+        display: block;
+    }
+
+    .navbar .menus {
+        display: none;
+    }
+
+    .navbar .menus ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .navbar .menus ul li {
+        width: 100vw;
+    }
+
+    .navbar .menus ul li a {
+        margin-left: 10px;
+    }
+
+
+}
