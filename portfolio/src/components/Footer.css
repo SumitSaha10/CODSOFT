@@ -1,0 +1,112 @@
+.footer {
+    box-sizing: border-box;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid rgb(40, 40, 40);
+    --color: rgb(5, 164, 249);
+}
+
+.footerHeading {
+    font-size: 25px;
+}
+
+.footerInfo {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footerInfo p {
+    font-size: 18px;
+}
+
+.quickLinks {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.quickLinks .footerQuickLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.quickLinks .footerQuickLinks a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    gap: 5px;
+}
+
+.quickLinks .footerQuickLinks a:hover {
+    color: var(--color);
+}
+
+.footerContact {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footerContact .contactInfo {
+    display: flex;
+    gap: 5px;
+}
+
+.footerContact .contactInfo i {
+    color: var(--color);
+}
+
+.footerContact .contactSocialLinks {
+    display: flex;
+    gap: 10px;
+}
+
+.footerContact .contactSocialLinks a {
+    color: white;
+}
+
+.footerContact .contactSocialLinks i {
+    font-size: 35px;
+}
+
+.footerContact .contactSocialLinks i:hover {
+    color: var(--color);
+}
+
+@media (max-width:700px) {
+    .footer {
+        flex-direction: column;
+        height: 100vh;
+        justify-content: flex-start;
+        gap: 15px;
+    }
+
+    .footerInfo {
+        width: 60%;
+        height: 30%;
+
+    }
+
+    .quickLinks {
+        width: 60%;
+        height: 30%;
+
+    }
+
+    .footerContact {
+        width: 60%;
+        height: 30%;
+    }
+
+}

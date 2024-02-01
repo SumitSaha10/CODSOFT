@@ -1,0 +1,103 @@
+.contact {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+}
+
+.contact .contactHeading {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 35px;
+}
+
+.contact .contactSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+
+.contact .contactSection img {
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.contact .contactSection .form {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact .contactSection .form .fields {
+    width: 80%;
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.contact .contactSection .form .fields input {
+    width: 100%;
+    font-size: 17px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.contact .contactSection .form .fields textarea {
+    width: 100%;
+    font-size: 17px;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.contact .contactSection .form .fields .contactBtn {
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, cyan, purple);
+    border: none;
+
+}
+
+.contact .contactSection .form .fieldsBtn {
+    border: none;
+    background: none;
+}
+
+
+@media (max-width:700px) {
+    .contact .contactSection {
+
+        flex-direction: column;
+
+    }
+
+    .contact .contactSection img {
+        height: 40%;
+        width: 90%;
+    }
+
+    .contact .contactSection .form {
+        width: 90%;
+    }
+
+    .contact .contactSection .form .fields .contactBtn {
+        font-size: 17px;
+        object-fit: contain;
+        cursor: pointer;
+
+    }
+}

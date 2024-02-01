@@ -1,0 +1,150 @@
+.about {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+}
+
+.about .aboutTitle {
+    font-size: 45px;
+    height: 100%;
+}
+
+.about .aboutTitle i {
+    margin: 0 10px;
+}
+
+.about .aboutBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.about .mainpic {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    object-fit: contain;
+
+}
+
+.about .mainpic img {
+    width: 70%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    transition: all 1s;
+}
+
+.about .mainpic img:hover {
+    perspective: 10px;
+    transform: rotateY(45deg);
+
+}
+
+.about .maininfo {
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    gap: 15px;
+
+
+}
+
+.about .maininfo .aboutName {
+    font-size: 40px;
+}
+
+.about .maininfo .aboutRole {
+    font-size: 20px;
+}
+
+.about .maininfo .aboutDescription {
+    font-size: 17px;
+}
+
+.about .maininfo .aboutBtns {
+    display: flex;
+    gap: 15px;
+}
+
+.about .maininfo .aboutBtns a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    background: linear-gradient(90deg, rgb(87, 17, 249),
+            rgb(13, 203, 255),
+            rgb(24, 209, 135)) rgb(255, 221, 0);
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+    background-size: 100%;
+    z-index: 1;
+    margin: 0 2px;
+    cursor: pointer;
+
+}
+
+.about .maininfo .aboutBtns a i {
+    margin: 0 5px;
+}
+
+@media (max-width:800px) {
+    .about .aboutTitle {
+        /* margin-top: 2rem; */
+        font-size: 30px;
+    }
+
+    /* .about .aboutBox {
+        margin-top: 1rem;
+    } */
+
+    .about .maininfo .aboutName {
+        font-size: 25px;
+    }
+
+    .about .maininfo .aboutRole {
+        font-size: 15px;
+    }
+
+    .about .maininfo .aboutDescription {
+        font-size: 14px;
+    }
+
+    .about .maininfo .aboutBtns a {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width:700px) {
+
+    /* .about .mainpic img {
+        width: 40%;
+
+    } */
+
+    .about .aboutBox {
+        flex-direction: column;
+
+    }
+
+    .about .maininfo {
+        width: 70%;
+
+    }
+
+
+}
